@@ -1,69 +1,94 @@
 <!DOCTYPE html>
-<html>
+<html lang="en-US">
     <head>
+        <meta charset="utf-8">
+        <title>Building HTML Forms</title>
         <link rel="stylesheet" type="text/css" href="layout.css">
     </head>
     <body>
-        <form action="/form-handling-url" method="post">
+        <h1 class="heading-style">Survey Form</h1>
+        <div class="page-grid">
+        <form action="/form-handling-url" method="post" class="form-style">
             <fieldset>
-            <legend>Add user</legend>
-        
-            <div>
-                <label for="firstName">First name</label>
-                <input type="text" id="firstName" name="first_name">
-            </div>
-        
-            <div>
-                <label for="lastName">Last name</label>
-                <input type="text" id="lastName" name="last_name">
-            </div>
-        
-            <div>
-                <label for="email">Email</label>
-                <input type="email" id="email" name="email_address">
-            </div>
-        
-            <div>
-                <label for="role">Status</label>
-                <select id="role" name="user_role_name">
-                <option value="student">Student</option>
-                <option value="instructor">Instructor</option>
-                <option value="guest">Guest</option>
-                </select>
-            </div>
-            
-            <div>
-                <p>Choose your favorite Web language:</p>
-                <input type="radio" id="html" name="fav_language" value="HTML">
-                <label for="html">HTML</label><br>
-                <input type="radio" id="css" name="fav_language" value="CSS">
-                <label for="css">CSS</label><br>
-                <input type="radio" id="javascript" name="fav_language" value="JavaScript">
-                <label for="javascript">JavaScript</label>
-            </div>
+                <legend>Add user</legend>
+                <div class="input-style">
+                    <label for="first-name">First name:</label>
+                </div>
+                <div class="input-style">
+                    <input id="first-name" type="text" name="first_name">
+                </div>
+                <div>
+                    <div class="input-style">
+                        <label for="last-name">Last name:</label>
+                    </div>
+                    <div class="input-style">
+                        <input id="last-name" type="text" name="last_name">
+                    </div>
+                </div>
+                <div>
+                    <div class="input-style">
+                        <label>
+                            Email:
+                        </label>
+                    </div>
+                    <div class="input-style">
+                    <input type="email" name="email_address" id="email-box">
+                    </div>
+                </div>
 
-            <div>
-                <label for="comments">Comments</label>
-                <textarea id="comments" name="comments"></textarea>
-            </div>
+                    <div class="input-style">
+                        <div class="status-container">
+                            <label for="status">
+                                Status:
+                            </label>
+                        </div>
+                        <div class="date-container">
+                            <label>
+                                Date:
+                            </label>
+                        </div>
+                    </div>
+                    <div class="input-style">
+                        <div class="status-input-container">
+                            <select id="status" name="user_status" >
+                                <option value="student">Student</option>
+                                <option value="instructor">Instructor</option>
+                                <option value="guest">Guest</option>
+                            </select>
+                        </div>
+                        <div class="date-input-container">
+                            <input type="date" name="current_date" id="dates">
+                        </div>
+                    </div>
 
-            <div>
-                <label for="date">Date</label>
-                <input type="date" id="date" name="date">
-            </div>
-
-            <div>
-                <input type="checkbox" id="signup" name="signup" value="Signup">
-                <label for="signup">Sign up for news letter</label><br>
-                <input type="checkbox" id="terms" name="terms" value="Terms">
-                <label for="terms"> Agree to terms and conditions</label>
-            </div>
-        
-            <div>
-                <button type="submit">Submit</button>
-            </div>
-        
+                <p>Choose your favorite language:</p>
+                <div class="radio-style">
+                    <input type="radio" id="html" name="favorite-language">
+                    <label for="html" class="alignment">HTML</label>
+                    <input type="radio" id="css" name="favorite-language">
+                    <label for="css" class="alignment">CSS</label>
+                    <input id="javascript" type="radio" name="favorite-language">
+                    <label for="javascript" class="alignment">JS</label>
+                </div>
+                <div>
+                    <div class="comment-container">
+                        <label for="comments" class="comment-layout">Comments</label>
+                    </div>
+                    <div class="input-style">
+                        <textarea id="comments" name="comments_by_user"></textarea>
+                    </div>
+                </div>
+                <div class="checkbox-style">
+                    <input type="checkbox" name="news_letter" id="newsletter">
+                    <label for="newsletter" id="news-label">Sign up<br>for news</label>
+                    <input type="checkbox" id="terms-conditions" name="terms_and_conditions">
+                    <label for="terms-condtions" id="terms-label">Agree to<br>terms</label>
+                </div>
+                <div class="input-style">
+                    <button type="submit">Submit</button>
+                </div>
             </fieldset>
         </form>
+    </div>
     </body>
 </html>

@@ -1,0 +1,162 @@
+body{
+    margin:0;
+    margin-bottom:0;
+    padding:0;
+    height:712px;
+    display:grid;
+    grid-template-rows: repeat(6,1fr);
+    grid-template-columns: repeat(10,1fr);
+    background-image: linear-gradient(rgba(0,0,0,0.1).1em,transparent .1em)
+                        ,linear-gradient(90deg,rgba(0,0,0,.1) .1em, transparent .1em);
+    background-size:2em 2em;
+    font-size: 18px;
+}
+
+.heading-style{
+    grid-area:1/2/2/4;
+}
+
+form{
+    width:615px;
+    display: flex;
+    justify-content: center;
+    }
+
+fieldset{
+padding: 10px;
+display: relative;
+width:400px;
+height:390px;
+background:white;
+}
+
+.input-style{
+    display: flex;
+    justify-content: center;
+}
+
+.page-grid{
+grid-area: 2/4/6/9;
+}
+
+legend{
+    border:1px solid;
+}
+
+.status-container{
+width:90px;
+display:flex;
+justify-content:center;
+}
+
+.date-container{
+    width:90px;
+    display:flex;
+    justify-content:center;
+}
+
+.status-input-container{
+    width: 95px;
+    display:flex;
+    justify-content:center;
+}
+
+.date-input-container{
+    width:100px;
+    display:flex;
+    justify-content:flex-start;
+}
+
+select{
+    width:93px;
+}
+
+p{
+    display:flex;
+    justify-content: center;
+    font-size: 13.5px;
+    margin-bottom: 2px;
+}
+
+.comment-container{
+    display:flex;
+    justify-content:center;
+}
+
+.comment-layout{
+    position:relative;
+    right:50px;
+    padding-top:3px;
+}
+
+.radio-style{
+    display:flex;
+    justify-content:space-around;
+    width: 210px;
+    margin-left:auto;
+    margin-right:auto;
+}
+
+.alignment{
+    position:relative;
+    right:6px;
+}
+
+#dates{
+    width:94px;
+}
+
+#comments{
+    height:40px;
+    width:185px;
+}
+
+.checkbox-style{
+    display:flex;
+    justify-content:center;
+}
+
+#news-label,#terms-label{
+    font-size:13.5px;
+    padding-left:3px;
+    padding-top: 6px;
+}
+
+#news-label,#newsletter{
+    position:relative;
+    right:8px;
+}
+
+#terms-conditions,#terms-label{
+    position:relative;
+    left:8px;
+}
+
+#terms-conditions{
+    height:14.5px;
+    width:14.5px;
+    position:relative;
+    top:6px;
+}
+
+#newsletter{
+    height:15px;
+    width:15px;
+    position:relative;
+    top:5.5px;
+}
+
+button{
+    margin-top:10px;
+    width:192.2px;
+    font-size:17px;
+}
+
+legend{
+    margin-left:40px;
+    width:70px;
+}
+
+#first-name,#last-name,#email-box{
+    width:185px;
+}
